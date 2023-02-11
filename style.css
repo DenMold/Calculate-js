@@ -1,33 +1,150 @@
-body{
-    width: 500px;
-    margin: 4% auto;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 5px;
-    font-size: 1.8rem;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    background-color: rgb(224, 224, 224);
-}
-
 .calc{
+    width: 300px;
+    height: 500px;
+    border: solid 2px #080808;
+    border-radius: 20px;
     padding: 20px;
-    box-shadow: 8px 5px 7px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 5px 7px 8px rgba(126, 126, 126, 0.788);
     border-radius: 2px;
-    background: linear-gradient(rgb(56, 56, 56), #e66465, #9198e5);
+    background: linear-gradient(#000000, rgb(56, 56, 56),  #000000);
+    color:rgb(250, 250, 250);
+    font-family: Bradley Hand, cursive;
+    margin: 50px auto;
 }
 
-.input{
-    border: solod 1px #080808;
-    border-radius: 1px;
+.calc-scrin{
+    height: 130px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.number{
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+
+}
+
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    'clears plus-minus percent division'
+    'seven eight nine multiply'
+    'four five six minus'
+    'one two three plus'
+    'zero zero dot equal';
+    grid-gap: 7px;
+    justify-items: center;   
+}
+
+ .btn{
+    width: 60px;
     height: 60px;
+    background: linear-gradient(#ddd9d9, #080808);
+    border: solid 1px #080808;
+    border-radius: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover{
+       filter: brightness(120%);
+}
+
+.btn:active{
+    filter: brightness(90%);
+}
+
+.zero{
+    grid-area: zero;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.grey{
+    background:linear-gradient(#292929, #000000, #949392 );
+}
+
+.orang{
+    background: linear-gradient(#080808, #cf8803, #000000)
+}
+
+/*.zero{
+    width: 250px;
+    height: 60px;
+    background: linear-gradient(#ddd9d9, #080808);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.zero:hover{
+    background:rgb(115, 222, 255);
+    border: solid 2px #4be7fc;
+    filter: brightness(120%);
+}
+
+.zero:active{
+    filter: brightness(90%);
+}
+
+.clears{
+    width: 380px;
+    height: 60px;
+    background: linear-gradient(#ddd9d9, #080808);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;    
+}
+
+.clears:hover{
+    background:rgb(115, 222, 255);
+    border: solid 2px #4be7fc;
+    filter: brightness(120%);
+}
+
+.clears:active{
+    filter: brightness(90%);
+}
+
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    "clears clears clears clears"
+    "minus plus multiply divide"
+    "seven eight nine"
+    "four five six"
+    "point zero";
+    grid-gap: 7px;
+} */
+
+
+/* .input{
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+    border-radius: 7px;
     padding: 10px 15px 0 0;
+    background: linear-gradient( rgb(0, 0, 0), #e66465, #080808 );
     text-align: right;
     margin-right: 6px;
-    font-size: 2.5rem;
     overflow-x: hidden;
     transition: all .2s ease-in-out;
+}
+
+.input p{
+    max-width: 100%;
+    font-size: 45px;
+    color:#ddd9d9
 }
 
 .minus, .plus, .multiply, .clears, .divide{
@@ -94,13 +211,13 @@ body{
     font-weight: bold;
 }
 
-.equal{
+div.equal{
     display: inline-block;
     border: solid 5px #080808;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
-    background: linear-gradient(#ddd9d9, #080808);
+    background: linear-gradient( #080808, #ddd9d9, #080808);
     transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
     font-weight: bold;
     width: 75px;
@@ -108,5 +225,16 @@ body{
     padding: 190px 10px 0px 5px ;
     margin: 5px 6px 5px 0;
 }
+
+div.equal:hover{
+    background-color: #ddd;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(122, 122, 122, 0.74);
+    box-shadow: 0px 1px 4px 0px rgb(122, 122, 122);
+    border-color: rgb(115, 222, 255);
+}
+
+div.equal:active{
+    font-weight: bold;
+} */
 
 

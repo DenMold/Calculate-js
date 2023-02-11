@@ -5,47 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="project.js"></script>
+    
     <title>Calculator</title>
 </head>
 <body>
     <div class="calc">
-        <div id="input" class="input"></div>
+        <div id="input" class="calc-scrin">
+            <p class="number">0</p>
+        </div>
         <div class="buttons">
-            <div class="operators">
-                <div id="clears" class="clears">C</div>
-                <div class="minus">-</div>
-                <div class="plus">+</div>
-                <div class="multiply">x</div>
-                <div class="divide">/</div>
-            </div>
-            <div class="c">
-            <div class="panel">
-                 <div class="number">
-                    <div class="one">1</div>
-                    <div class="four">4</div>
-                    <div class="seven">7</div>
-                 </div>          
-                 <div class="number">
-                    <div class="two">2</div>
-                    <div class="five">5</div>
-                    <div class="eight">8</div>
-                 </div>          
-                 <div class="number">
-                    <div class="three">3</div>
-                    <div class="six">6</div>
-                    <div class="nine">9</div>
-                 </div> 
-                 <div class="number">
-                    <div class="zero">0</div>
-                    <div class="point">.</div>
-                 </div> 
-            </div> 
-            <div id="result" class="equal">
-                <div class="equal_center">=</div>
-            </div>
+          
+                <div id="clears" class="btn clears grey">C</div>
+                <div id="operator" class="btn plus-minus grey">+/-</div>
+                <div id="operator" class="btn percent grey">%</div>
+                <div id="operator" class="btn division grey">/</div>
+                
+                <div id="clears" class="btn seven">7</div>
+                <div id="operator" class="btn eight">8</div>
+                <div id="operator" class="btn nine">9</div>
+                <div id="operator" class="btn multiply orang">x</div>
+
+                <div id="clears" class="btn four">4</div>
+                <div id="operator" class="btn five">5</div>
+                <div id="operator" class="btn six">6</div>
+                <div id="operator" class="btn minus orang">-</div>
+
+                <div id="clears" class="btn one">1</div>
+                <div id="operator" class="btn two">2</div>
+                <div id="operator" class="btn three">3</div>
+                <div id="operator" class="btn plus orang">+</div>
+
+                <div id="clears" class="btn zero">0</div>
+                <div id="operator" class="btn dot">.</div>
+                <div id="operator" class="btn equal orang">=</div>
+    
         </div>
     </div>
-    
+
+
+    <script src="calc.js"></script>
 </body>
 </html>
