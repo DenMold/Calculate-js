@@ -30,7 +30,7 @@
 .buttons{
     display: grid;
     grid-template-areas: 
-    'clears plus-minus percent division'
+    'clears clears clears division'
     'seven eight nine multiply'
     'four five six minus'
     'one two three plus'
@@ -58,6 +58,13 @@
 
 .btn:active{
     filter: brightness(90%);
+}
+
+.clears{
+    grid-area: clears;
+    width: 100%;
+    border-radius: 30px;
+  
 }
 
 .zero{
