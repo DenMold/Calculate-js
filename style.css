@@ -1,10 +1,15 @@
+body{
+    background: linear-gradient(gray, rgb(179, 176, 1), black
+    );
+}
+
 .calc{
     width: 300px;
     height: 500px;
     border: solid 2px #080808;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 8px 5px 7px 8px rgba(126, 126, 126, 0.788);
+    box-shadow: 8px 15px -7px 8px rgb(0, 0, 0);
     border-radius: 2px;
     background: linear-gradient(#000000, rgb(56, 56, 56),  #000000);
     color:rgb(250, 250, 250);
